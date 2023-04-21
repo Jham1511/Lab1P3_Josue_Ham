@@ -16,12 +16,32 @@ int main()
 		cin >> opcion;
 		switch (opcion) {
 		case 1: {
-
+			cout << "Error Numerico";
+			
 		}
 		break;
 
 		case 2: {
+			cout << "Division en 2 Entradas" << endl
+			<< "Ingrese la cantidad de iteraciones (Variable P): ";
+			int P;
+			cin >> P;
+			cout << "Ingrese A: ";
+			int A;
+			cin >> A;
+			cout << "Ingrese B: ";
+			int B;
+			cin >> B;
 
+			int M = 0;
+			if (P > 0 && B!=0){
+				for (int i = 0; i < P; i++){
+					M+= A/B;
+					B--;
+				}
+			}
+
+			cout << "Valor de M: " << M << endl;
 		}
 			  break;
 		default:
