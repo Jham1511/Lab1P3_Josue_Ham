@@ -40,15 +40,16 @@ int main()
 			double E2 = 1.0-S2;
 			long double E3 = 1.0-S3;
 
-			if (E1 <= 0){
-				E1*-1;
+			if (E1 <= 0) {
+				E1*=-1;
 			}
-			else if (E2 < 0){
-				E2*-1;
+			else if (E2 <= 0) {
+				E2*=-1;
 			}
-			else if (E3 < 0) {
-				E3*-1;
+			else if (E3 <= 0) {
+				E3*=-1;
 			}
+
 			cout << "Usando Float: " << endl << "E: " << E1 << endl;
 			cout << "Usando Double: " << endl << "E: " << E2 << endl;
 			cout << "Usando Long Double: " << endl << "E: " << E3 << endl;
